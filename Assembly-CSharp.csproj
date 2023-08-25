@@ -58,8 +58,10 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\LineR.cs" />
     <Compile Include="Assets\Scripts\TouchCount.cs" />
     <Compile Include="Assets\Scripts\TouchPosition.cs" />
+    <Compile Include="Assets\Scripts\Drag.cs" />
     <Compile Include="Assets\Scripts\InputAccelerometer.cs" />
     <Compile Include="Assets\Scripts\TouchPhase.cs" />
   </ItemGroup>
