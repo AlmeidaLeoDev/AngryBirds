@@ -1,0 +1,463 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.6f1 (b9e6e7e9fa2d) revision 12183271'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'pt' Physical Memory: 7532 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Meu conteÃºdo/CODE/Projetos/Unity/Angry Birds
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60730
+Successfully changed project path to: C:/Meu conteÃºdo/CODE/Projetos/Unity/Angry Birds
+C:/Meu conteÃºdo/CODE/Projetos/Unity/Angry Birds
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [50852] Host "[IP] 192.168.0.105 [Port] 0 [Flags] 2 [Guid] 2479984575 [EditorId] 2479984575 [Version] 1048832 [Id] WindowsEditor(7,Leonardo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [50852] Host "[IP] 192.168.0.105 [Port] 0 [Flags] 2 [Guid] 2479984575 [EditorId] 2479984575 [Version] 1048832 [Id] WindowsEditor(7,Leonardo) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 31.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.6f1 (b9e6e7e9fa2d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Meu conteÃºdo/CODE/Projetos/Unity/Angry Birds/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f9d)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   30.0.15.1274
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.016528 seconds.
+- Loaded All Assemblies, in  0.439 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 411 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.764 seconds
+Domain Reload Profiling: 1201ms
+	BeginReloadAssembly (146ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (74ms)
+	LoadAllAssembliesAndSetupDomain (170ms)
+		LoadAssemblies (143ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (163ms)
+			TypeCache.Refresh (161ms)
+				TypeCache.ScanAssembly (147ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (764ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (700ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (530ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (110ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Meu conteÃºdo\CODE\Projetos\Unity\Angry Birds\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Meu conteÃºdo\CODE\Projetos\Unity\Angry Birds\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.943 seconds
+Refreshing native plugins compatible for Editor in 9.50 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.709 seconds
+Domain Reload Profiling: 1648ms
+	BeginReloadAssembly (141ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (719ms)
+		LoadAssemblies (470ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (324ms)
+			TypeCache.Refresh (299ms)
+				TypeCache.ScanAssembly (282ms)
+			ScanForSourceGeneratedMonoScriptInfo (20ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (709ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (540ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (46ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (335ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 7.67 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4002 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (245.0 KB). Loaded Objects now: 4461.
+Memory consumption went from 145.1 MB to 144.9 MB.
+Total: 3.852200 ms (FindLiveObjects: 0.400600 ms CreateObjectMapping: 0.124100 ms MarkObjects: 2.983600 ms  DeleteObjects: 0.342700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Meu conteÃºdo\CODE\Projetos\Unity\Angry Birds\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Meu conteÃºdo\CODE\Projetos\Unity\Angry Birds\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.922 seconds
+Refreshing native plugins compatible for Editor in 7.07 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.552 seconds
+Domain Reload Profiling: 2466ms
+	BeginReloadAssembly (196ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (52ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (635ms)
+		LoadAssemblies (427ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (290ms)
+			TypeCache.Refresh (282ms)
+				TypeCache.ScanAssembly (267ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (1553ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (393ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (83ms)
+			ProcessInitializeOnLoadAttributes (233ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 6.88 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3994 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (218.3 KB). Loaded Objects now: 4464.
+Memory consumption went from 142.9 MB to 142.7 MB.
+Total: 4.193800 ms (FindLiveObjects: 0.383400 ms CreateObjectMapping: 0.118300 ms MarkObjects: 3.089400 ms  DeleteObjects: 0.600600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 521633.665655 seconds.
+  path: Assets/Packages/Free Game Items
+  artifactKey: Guid(b505bdff6ea532d41b298da23bf27408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items using Guid(b505bdff6ea532d41b298da23bf27408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1f40d44a4c6159012322d32e517451b') in 0.003335 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.027116 seconds.
+  path: Assets/Packages/Free Game Items/preview.png
+  artifactKey: Guid(f9d96f4e7a15ef24c8c757d3388b9c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/preview.png using Guid(f9d96f4e7a15ef24c8c757d3388b9c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442d69a979fcafba9f43f876aca9a69c') in 0.090657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.880151 seconds.
+  path: Assets/Packages/Free Game Items/96dpi
+  artifactKey: Guid(6880c46283a35c5479c6c49bbcc3beec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi using Guid(6880c46283a35c5479c6c49bbcc3beec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66184d7fa1b7658e80f41a24518c4ad9') in 0.000889 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.064222 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/ammo.png
+  artifactKey: Guid(89f23bff12960d44b9e2ff317502a1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/ammo.png using Guid(89f23bff12960d44b9e2ff317502a1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f92bf090284a46518af51d18fe82e95f') in 0.017623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/bomb.png
+  artifactKey: Guid(db87746129cc599478e1ae8cecedefd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/bomb.png using Guid(db87746129cc599478e1ae8cecedefd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9795ec77a779245d6a448c136873a467') in 0.018377 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/potion_2.png
+  artifactKey: Guid(80bd76bfccc703a4db676af435d54055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/potion_2.png using Guid(80bd76bfccc703a4db676af435d54055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2c7f159bf916ecfe886d9be03ca10ae') in 0.022211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/pills.png
+  artifactKey: Guid(dfecc0923b6ad9e4bb1187809ad62dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/pills.png using Guid(dfecc0923b6ad9e4bb1187809ad62dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0296d0a14216a94a09b5c062db2b599a') in 0.019254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/book.png
+  artifactKey: Guid(405f359d0ed349e439b3e500b5f55c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/book.png using Guid(405f359d0ed349e439b3e500b5f55c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '341227d3832ecf09fa06b5c17ee1d8bb') in 0.025410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/rifle.png
+  artifactKey: Guid(1bcfbc6b95a2af94aa21aeb5a22ad9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/rifle.png using Guid(1bcfbc6b95a2af94aa21aeb5a22ad9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd1f300af8f283fa6d89b98af950bf8') in 0.022876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/gem_1.png
+  artifactKey: Guid(1b4ab323c3684824c8c12d284b4688de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/gem_1.png using Guid(1b4ab323c3684824c8c12d284b4688de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2034841c4c9792e128d7040a1a11bb1d') in 0.022467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/bandage.png
+  artifactKey: Guid(55d319343d6d686429960c7dce53140d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/bandage.png using Guid(55d319343d6d686429960c7dce53140d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5716fe98fad87c3fda921901bbbf6720') in 0.024397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/rope.png
+  artifactKey: Guid(81db573bae342c546ad4eb703ead30a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/rope.png using Guid(81db573bae342c546ad4eb703ead30a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd322ff1ce21e868d47f1a742d6905d') in 0.020535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/gem_2.png
+  artifactKey: Guid(59dceeb1278244b429441fc1a4d16dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/gem_2.png using Guid(59dceeb1278244b429441fc1a4d16dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee84dc46bfd97091b40663704ad52e86') in 0.018031 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/potion_1_empty.png
+  artifactKey: Guid(6d3666605cd21104fa84a1a601df5597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/potion_1_empty.png using Guid(6d3666605cd21104fa84a1a601df5597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c09db8ca845dc249c15b9de00ebd5a86') in 0.018242 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/chemical_light.png
+  artifactKey: Guid(cc7773ef4a2e0cb40859bd61c2c27b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/chemical_light.png using Guid(cc7773ef4a2e0cb40859bd61c2c27b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10cac8397e420062b3eb25bf1086c070') in 0.019936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/scroll.png
+  artifactKey: Guid(50a947e39c924a34190e2127f6d76ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/scroll.png using Guid(50a947e39c924a34190e2127f6d76ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0e50739e65600cd9bbe09363cecf16') in 0.020284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/pill.png
+  artifactKey: Guid(0289efeb9feff2947b266fed980218d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/pill.png using Guid(0289efeb9feff2947b266fed980218d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ebbd1c23f0ea626af4d9aaf691bf8d') in 0.022516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/clover.png
+  artifactKey: Guid(b791d37cdec063e4abd56e980fc82f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/clover.png using Guid(b791d37cdec063e4abd56e980fc82f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64e1f48fea8df1c26ce62cd2df484d8e') in 0.023276 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/potion_1.png
+  artifactKey: Guid(c5eceadfabbf8214abff1dad1b45500c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/potion_1.png using Guid(c5eceadfabbf8214abff1dad1b45500c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07278d769b600e3ae9b1a1a47f4a6546') in 0.016500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Packages/Free Game Items/96dpi/feather.png
+  artifactKey: Guid(d978eb0536f3b6046a6428f028d5a943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Game Items/96dpi/feather.png using Guid(d978eb0536f3b6046a6428f028d5a943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '087c81e0d25b2612a8f657aecf3ccbf8') in 0.016696 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 13.171258 seconds.
+  path: Assets/Packages/IS - Bow and arrow/Bow/Bow size 472/IS - Bow 472-3.png
+  artifactKey: Guid(c6b2b347dd5ee654f818f2bc9c52b45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/IS - Bow and arrow/Bow/Bow size 472/IS - Bow 472-3.png using Guid(c6b2b347dd5ee654f818f2bc9c52b45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45db9ac032f6e828ae647b46fdbe55ae') in 0.027718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.106969 seconds.
+  path: Assets/Packages/Rounded Blocks/groundAndGrass.png
+  artifactKey: Guid(d3d615e5c42c87246b426e6a3ac5b692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Rounded Blocks/groundAndGrass.png using Guid(d3d615e5c42c87246b426e6a3ac5b692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780d8a9bae33d57f743345016a99d9fc') in 0.053504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Packages/Rounded Blocks/stone.png
+  artifactKey: Guid(df2e83bdceb904a4ea9bca45d7f1ba6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Rounded Blocks/stone.png using Guid(df2e83bdceb904a4ea9bca45d7f1ba6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82ef0984c7e48fd41ee5768935f55715') in 0.023713 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Packages/Rounded Blocks/mossBlock.png
+  artifactKey: Guid(a5d45e3a152dcd64e9cb71de1f6733fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Rounded Blocks/mossBlock.png using Guid(a5d45e3a152dcd64e9cb71de1f6733fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74936f4f2a1a84b61608b621e78be39d') in 0.023549 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 17.299902 seconds.
+  path: Assets/Packages/SunnyLand Artwork/Sprites/Enemies/eagle/eagle-attack-2.png
+  artifactKey: Guid(c97786e9459b34e058449b84cd9aab61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/SunnyLand Artwork/Sprites/Enemies/eagle/eagle-attack-2.png using Guid(c97786e9459b34e058449b84cd9aab61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f151590f19e3a07ee2bc7e050e8ceb') in 0.030603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 11.198497 seconds.
+  path: Assets/Packages/SunnyLand Artwork/Sprites/Enemies/Vulture/vulture2.png
+  artifactKey: Guid(cea7b0258c1dd444c926d20d5e9f3807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/SunnyLand Artwork/Sprites/Enemies/Vulture/vulture2.png using Guid(cea7b0258c1dd444c926d20d5e9f3807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1cfd94af56890c50d02c090163a9da') in 0.016476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -3973,9 +3973,11 @@ m_ResolvedPackages:
     - 1.0.0-pre.3
     - 1.0.0-pre.4
     - 1.0.0
+    - 1.0.1
     compatible:
     - 1.0.0
-    recommended: 1.0.0
+    - 1.0.1
+    recommended: 1.0.1
     deprecated: []
   dependencies:
   - name: com.unity.2d.sprite
