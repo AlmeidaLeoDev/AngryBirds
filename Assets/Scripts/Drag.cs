@@ -114,7 +114,7 @@ public class Drag : MonoBehaviour
 
     void MataPassaro()
     {
-        if (passaroRB.velocity.magnitude == 0 && passaroRB.IsSleeping()); 
+        if (passaroRB.velocity.magnitude == 0 && passaroRB.IsSleeping())
         {
             StartCoroutine(TempoMorte());
         }
