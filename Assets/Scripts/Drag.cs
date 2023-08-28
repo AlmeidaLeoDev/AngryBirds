@@ -17,7 +17,7 @@ public class Drag : MonoBehaviour
     //Um raio é uma linha infinita com origem é direção
     private Ray leftCatapultRay; //Raio usado para calcular a origem e direção em que o pássaro será lançado quando solto
     private CircleCollider2D passaroCol; //Calcular o ponto final do raio do elástico que toca o pássaro, para garantir que está correto
-    private Vector2 catapultoToBird; //É usada para definir a direção do raio leftCatapultRay
+    private Vector2 catapultToBird; //É usada para definir a direção do raio leftCatapultRay
     private Vector3 pointL; // ajustar a exibição da linha elástica conforme o pássaro é puxado para trás
 
     //Spring
@@ -27,6 +27,10 @@ public class Drag : MonoBehaviour
 
     //Trabalhando com partículas
     public GameObject bomb;
+
+    //Limite do elástico
+    private Transform catapult; //Para passar direção
+    private Ray rayToMT;
 
     void Start()
     {
@@ -39,6 +43,10 @@ public class Drag : MonoBehaviour
         //Pegando componentes para inicializar as variáveis usadas em spring
         spring = GetComponent<SpringJoint2D>();
         passaroRB = GetComponent<Rigidbody2D>();
+
+        //Passando valores para minhas variáveis do limite do elástico
+        catapult = spring.connectedBody.transform;
+        rayToMT = new Ray(catapult.position, Vector3.zero); //Origem e direção
     }
 
     // Update is called once per frame
@@ -68,6 +76,16 @@ public class Drag : MonoBehaviour
                 if (touch.phase == UnityEngine.TouchPhase.Stationary || touch.phase == UnityEngine.TouchPhase.Moved)
                 {
                     Vector3 tPos = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, 10));
+
+                    //Código para limite do elástico
+                    catapultToBird = tPos - catapult.position;
+
+                    if (catapultToBird.sqrMagnitude > 9f)
+                    {
+                        rayToMT.direction = catapultToBird;
+                        tPos = rayToMT.GetPoint(3f);
+                    }
+
                     transform.position = tPos;
                 }
             }
@@ -109,9 +127,9 @@ public class Drag : MonoBehaviour
     //Ajuste da ponta conectada ao pássaro
     void LineUpdate()
     {
-        catapultoToBird = transform.position - lineFront.transform.position; //Terei a direção a ser passada a leftcatapult
-        leftCatapultRay.direction = catapultoToBird; //Direção sendo passada
-        pointL = leftCatapultRay.GetPoint(catapultoToBird.magnitude + passaroCol.radius); //magnitude retorna o comprimento do vetor
+        catapultToBird = transform.position - lineFront.transform.position; //Terei a direção a ser passada a leftcatapult
+        leftCatapultRay.direction = catapultToBird; //Direção sendo passada
+        pointL = leftCatapultRay.GetPoint(catapultToBird.magnitude + passaroCol.radius); //magnitude retorna o comprimento do vetor
 
         lineFront.SetPosition(1, pointL);
         lineBack.SetPosition(1, pointL); 
@@ -145,7 +163,7 @@ public class Drag : MonoBehaviour
 
     IEnumerator TempoMorte()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         Instantiate(bomb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
         Destroy(gameObject);
     }
@@ -156,6 +174,16 @@ public class Drag : MonoBehaviour
     {
         Vector3 mouseWP = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouseWP.z = 0f;
+
+        //Código para limite do elástico
+        catapultToBird = mouseWP - catapult.position;
+
+        if(catapultToBird.sqrMagnitude > 9f)
+        {
+            rayToMT.direction = catapultToBird;
+            mouseWP = rayToMT.GetPoint(3f);
+        }
+
         transform.position = mouseWP;
     }
     void OnMouseDown()
