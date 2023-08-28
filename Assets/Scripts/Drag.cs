@@ -24,6 +24,8 @@ public class Drag : MonoBehaviour
     private Vector2 prevVel; //vai ajudar na parte da velocidade
     private Rigidbody2D passaroRB;
 
+    public GameObject bomb;
+
     void Start()
     {
         drag = GetComponent<Collider2D>(); //obter o componente Collider2D do GameObject em que o script está anexado
@@ -70,6 +72,7 @@ public class Drag : MonoBehaviour
             {
                 passaroRB.isKinematic = false; //Para garantir que o pássaro não seja mais kinematic quando você solta-lo
                 clicked = false;
+                MataPassaro();
             }
         }
     }
@@ -107,5 +110,20 @@ public class Drag : MonoBehaviour
                 }
             }
         }
+    }
+
+    void MataPassaro()
+    {
+        if (passaroRB.velocity.magnitude == 0 && passaroRB.IsSleeping()); 
+        {
+            StartCoroutine(TempoMorte());
+        }
+    }
+
+    IEnumerator TempoMorte()
+    {
+        yield return new WaitForSeconds(3);
+        Instantiate(bomb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+        Destroy(gameObject);
     }
 }
