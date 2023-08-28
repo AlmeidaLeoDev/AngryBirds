@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Drag : MonoBehaviour
@@ -24,6 +25,7 @@ public class Drag : MonoBehaviour
     private Vector2 prevVel; //vai ajudar na parte da velocidade
     private Rigidbody2D passaroRB;
 
+    //Trabalhando com partículas
     public GameObject bomb;
 
     void Start()
@@ -43,9 +45,10 @@ public class Drag : MonoBehaviour
     void Update()
     {
         LineUpdate();
-
         springEffect();
         prevVel = passaroRB.velocity;
+
+        #if UNITY_ANDROID 
 
         if (Input.touchCount > 0)
         {
@@ -75,7 +78,27 @@ public class Drag : MonoBehaviour
                 MataPassaro();
             }
         }
+
+        #endif
+
+        #if UNITY_EDITOR //Me permite trabalhar com as funcionalidade diretamente na cena, sem precisar simular
+
+        if (clicked)
+        {
+            Dragging();
+        }
+
+        #endif
+
+        print (passaroRB.velocity.magnitude);
+
+        if(clicked == false && passaroRB.isKinematic == false)
+        {
+            MataPassaro();
+        }
     }
+
+
 
     void SetupLine() //Ajuste da ponta conectada ao arco
     {
@@ -125,5 +148,23 @@ public class Drag : MonoBehaviour
         yield return new WaitForSeconds(3);
         Instantiate(bomb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
         Destroy(gameObject);
+    }
+
+
+    //MOUSE
+    void Dragging()
+    {
+        Vector3 mouseWP = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseWP.z = 0f;
+        transform.position = mouseWP;
+    }
+    void OnMouseDown()
+    {
+        clicked = true;
+    }
+    void OnMouseUp()
+    {
+        passaroRB.isKinematic = false;
+        clicked = false;
     }
 }
