@@ -103,7 +103,7 @@ public class Drag : MonoBehaviour
                     lineFront.enabled = false; //destruir os renderes
                     lineBack.enabled = false;  //destruir os renderes
                     Destroy(spring);
-                    passaroRB.velocity = prevVel; //A velocidade tem que ser ajustada para não gerar inconsistência
+                    passaroRB.velocity = prevVel; //A velocidade tem que ser ajustada para não gerar inconsistênciaa
                 }
             }
         }
