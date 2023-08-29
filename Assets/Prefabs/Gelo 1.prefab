@@ -174,3 +174,4 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 37676652978b69440a4d22fc9b795c81, type: 3}
   - {fileID: 21300000, guid: a594253672bad1d47b6abac90bc36c95, type: 3}
+  bomb: {fileID: 0}

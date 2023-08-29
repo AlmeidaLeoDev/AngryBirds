@@ -32,6 +32,9 @@ public class Drag : MonoBehaviour
     private Transform catapult; //Para passar direção
     private Ray rayToMT;
 
+    //Rastro
+    private TrailRenderer rastro;
+
     void Start()
     {
         drag = GetComponent<Collider2D>(); //obter o componente Collider2D do GameObject em que o script está anexado
@@ -47,6 +50,9 @@ public class Drag : MonoBehaviour
         //Passando valores para minhas variáveis do limite do elástico
         catapult = spring.connectedBody.transform;
         rayToMT = new Ray(catapult.position, Vector3.zero); //Origem e direção
+
+        //Rastro
+        rastro = GetComponentInChildren<TrailRenderer>();
     }
 
     // Update is called once per frame
@@ -189,10 +195,12 @@ public class Drag : MonoBehaviour
     void OnMouseDown()
     {
         clicked = true;
+        rastro.enabled = false; //Quando tu clica no mouse o rastro é desativado
     }
     void OnMouseUp()
     {
         passaroRB.isKinematic = false;
         clicked = false;
+        rastro.enabled = true; //Quando tu solta ou botão do mouse o rastro é ativado
     }
 }
