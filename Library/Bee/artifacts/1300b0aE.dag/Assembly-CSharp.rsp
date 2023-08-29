@@ -380,6 +380,7 @@
 "Assets/Packages/Free 2D Cartoon Parallax Background/Demo/Script/ParallaxBackground_0.cs"
 "Assets/Scripts/CameraSegue.cs"
 "Assets/Scripts/Drag.cs"
+"Assets/Scripts/ImpactCode.cs"
 "Assets/Scripts/InputAccelerometer.cs"
 "Assets/Scripts/LineR.cs"
 "Assets/Scripts/TouchCount.cs"
