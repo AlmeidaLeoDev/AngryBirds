@@ -16,6 +16,14 @@ public class PassaroVeloz : MonoBehaviour
 
     void Update()
     {
+        //MOUSE
+        if (Input.GetMouseButtonDown(0) && passaroRb.isKinematic == false && trava == 0)
+        {
+            libera = true;
+            trava = 1;
+        }
+
+        //TOUCH
         if(Input.touchCount > 0)
         {
             touch = Input.GetTouch(0);
