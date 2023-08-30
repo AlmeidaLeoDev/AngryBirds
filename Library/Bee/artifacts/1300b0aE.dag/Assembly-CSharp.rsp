@@ -393,6 +393,7 @@
 "Assets/Scripts/ImpactCode.cs"
 "Assets/Scripts/InputAccelerometer.cs"
 "Assets/Scripts/LineR.cs"
+"Assets/Scripts/PassaroVeloz.cs"
 "Assets/Scripts/QuebraParentesco.cs"
 "Assets/Scripts/TouchCount.cs"
 "Assets/Scripts/TouchPhase.cs"

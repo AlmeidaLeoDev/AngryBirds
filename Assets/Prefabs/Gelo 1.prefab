@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6011708091589607624}
   m_Layer: 0
   m_Name: Gelo 1
-  m_TagString: Untagged
+  m_TagString: gelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -174,4 +174,4 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 37676652978b69440a4d22fc9b795c81, type: 3}
   - {fileID: 21300000, guid: a594253672bad1d47b6abac90bc36c95, type: 3}
-  bomb: {fileID: 0}
+  bomb: {fileID: 8089300741603172013, guid: 787059bf2fa0a2441b42a6c3bd6a2a00, type: 3}
