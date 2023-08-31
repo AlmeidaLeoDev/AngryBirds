@@ -401,6 +401,8 @@
 "Assets/Scripts/TouchCount.cs"
 "Assets/Scripts/TouchPhase.cs"
 "Assets/Scripts/TouchPosition.cs"
+"Assets/Scripts/Zoom.cs"
+"Assets/Scripts/ZoomBe.cs"
 -langversion:9.0
 
 /deterministic

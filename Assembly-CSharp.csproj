@@ -68,6 +68,7 @@
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Scripts\MorteTudo.cs" />
+    <Compile Include="Assets\Scripts\Zoom.cs" />
     <Compile Include="Assets\Scripts\PassaroMultiplo.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightIntensityFade.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\Scripts\ImpactCode.cs" />
     <Compile Include="Assets\Scripts\InputAccelerometer.cs" />
     <Compile Include="Assets\Scripts\CameraSegue.cs" />
+    <Compile Include="Assets\Scripts\ZoomBe.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\Scripts\QuebraParentesco.cs" />
