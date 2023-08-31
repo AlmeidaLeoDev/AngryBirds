@@ -67,6 +67,8 @@
     <Compile Include="Assets\Scripts\TouchPosition.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoDestructShuriken.cs" />
+    <Compile Include="Assets\Scripts\MenuInicialScroll.cs" />
+    <Compile Include="Assets\Scripts\Impulso.cs" />
     <Compile Include="Assets\Scripts\MorteTudo.cs" />
     <Compile Include="Assets\Scripts\Zoom.cs" />
     <Compile Include="Assets\Scripts\PassaroMultiplo.cs" />
@@ -79,6 +81,8 @@
     <Compile Include="Assets\Scripts\InputAccelerometer.cs" />
     <Compile Include="Assets\Scripts\CameraSegue.cs" />
     <Compile Include="Assets\Scripts\ZoomBe.cs" />
+    <Compile Include="Assets\Scripts\CriaPassaroUi.cs" />
+    <Compile Include="Assets\Scripts\MorteArea.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\Scripts\QuebraParentesco.cs" />
