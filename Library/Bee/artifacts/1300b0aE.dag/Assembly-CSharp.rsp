@@ -395,6 +395,7 @@
 "Assets/Scripts/Impulso.cs"
 "Assets/Scripts/InputAccelerometer.cs"
 "Assets/Scripts/LineR.cs"
+"Assets/Scripts/LoadingInfo.cs"
 "Assets/Scripts/MenuInicialScroll.cs"
 "Assets/Scripts/MorteArea.cs"
 "Assets/Scripts/MorteTudo.cs"

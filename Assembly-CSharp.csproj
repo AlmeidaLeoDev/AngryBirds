@@ -76,6 +76,7 @@
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\Packages\Free 2D Cartoon Parallax Background\Demo\Script\ParallaxBackground_0.cs" />
     <Compile Include="Assets\Scripts\Drag.cs" />
+    <Compile Include="Assets\Scripts\LoadingInfo.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_Translate.cs" />
     <Compile Include="Assets\Scripts\ImpactCode.cs" />
     <Compile Include="Assets\Scripts\InputAccelerometer.cs" />
