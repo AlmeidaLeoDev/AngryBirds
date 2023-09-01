@@ -6,6 +6,10 @@ TagManager:
   tags:
   - gelo
   - pass
+  - btnblock
+  - nomegame
+  - canvasback
+  - infotxt
   layers:
   - Default
   - TransparentFX
