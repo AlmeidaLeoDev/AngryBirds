@@ -11,6 +11,7 @@ public class LevelManagerPB : MonoBehaviour {
 
 	void Awake()
 	{
+		ZPlayerPrefs.Initialize("12345678", "pombobravogame");
 		if(instance == null)
 		{
 			instance = this;
@@ -21,6 +22,7 @@ public class LevelManagerPB : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+		ZPlayerPrefs.SetInt ("Level2", 1);
 		ListaAdd ();
 	}
 
@@ -53,7 +55,7 @@ public class LevelManagerPB : MonoBehaviour {
 			btnNew.levelTxtBTN.text = level.levelText;
 
 
-			if(PlayerPrefs.GetInt("Level"+btnNew.levelTxtBTN.text)==1)
+			if(ZPlayerPrefs.GetInt("Level"+btnNew.levelTxtBTN.text)==1)
 			{
 				level.desbloqueado = 1;
 				level.habilitado = true;
