@@ -61,6 +61,8 @@
     <Compile Include="Assets\Packages\Free 2D Cartoon Parallax Background\Demo\Script\BackgroundControl_0.cs" />
     <Compile Include="Assets\Scripts\PassaroVeloz.cs" />
     <Compile Include="Assets\Scripts\LineR.cs" />
+    <Compile Include="Assets\ZFrame\ZPlayerPrefs.cs" />
+    <Compile Include="Assets\ZFrame\Example\Example_ZPlayerPrefs.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\Scripts\TouchCount.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
@@ -73,6 +75,7 @@
     <Compile Include="Assets\Scripts\BTN_Confs.cs" />
     <Compile Include="Assets\Scripts\Impulso.cs" />
     <Compile Include="Assets\Scripts\MorteTudo.cs" />
+    <Compile Include="Assets\Scripts\SaveData\SalvaDados.cs" />
     <Compile Include="Assets\Scripts\Zoom.cs" />
     <Compile Include="Assets\Scripts\PassaroMultiplo.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
@@ -112,6 +115,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\ZFrame\Readme\readme_ZPlayerPrefs.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />

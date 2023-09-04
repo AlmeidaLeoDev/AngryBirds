@@ -407,11 +407,14 @@
 "Assets/Scripts/PassaroMultiplo.cs"
 "Assets/Scripts/PassaroVeloz.cs"
 "Assets/Scripts/QuebraParentesco.cs"
+"Assets/Scripts/SaveData/SalvaDados.cs"
 "Assets/Scripts/TouchCount.cs"
 "Assets/Scripts/TouchPhase.cs"
 "Assets/Scripts/TouchPosition.cs"
 "Assets/Scripts/Zoom.cs"
 "Assets/Scripts/ZoomBe.cs"
+"Assets/ZFrame/Example/Example_ZPlayerPrefs.cs"
+"Assets/ZFrame/ZPlayerPrefs.cs"
 -langversion:9.0
 
 /deterministic
