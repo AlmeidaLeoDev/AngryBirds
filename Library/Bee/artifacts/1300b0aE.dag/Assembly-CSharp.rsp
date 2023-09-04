@@ -408,6 +408,7 @@
 "Assets/Scripts/PassaroVeloz.cs"
 "Assets/Scripts/QuebraParentesco.cs"
 "Assets/Scripts/SaveData/SalvaDados.cs"
+"Assets/Scripts/ScrollCeu.cs"
 "Assets/Scripts/TouchCount.cs"
 "Assets/Scripts/TouchPhase.cs"
 "Assets/Scripts/TouchPosition.cs"

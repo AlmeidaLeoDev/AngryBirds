@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\ImpactCode.cs" />
     <Compile Include="Assets\Scripts\CameraSegue.cs" />
     <Compile Include="Assets\Scripts\ZoomBe.cs" />
+    <Compile Include="Assets\Scripts\ScrollCeu.cs" />
     <Compile Include="Assets\Scripts\CriaPassaroUi.cs" />
     <Compile Include="Assets\Scripts\MorteArea.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
