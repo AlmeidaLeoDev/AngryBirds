@@ -15,8 +15,8 @@ public class LoadingInfo : MonoBehaviour
 
     IEnumerator LoadGameProg()
     {
-        // Inicia o processo de carregamento assíncrono da cena com índice 2
-        AsyncOperation async = SceneManager.LoadSceneAsync(0);
+        // Inicia o processo de carregamento assíncrono da cena com índice 1
+        AsyncOperation async = SceneManager.LoadSceneAsync(1);
 
         // Enquanto a operação assíncrona não está concluída
         while (!async.isDone)

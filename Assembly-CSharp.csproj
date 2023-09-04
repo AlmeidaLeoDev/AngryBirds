@@ -64,7 +64,9 @@
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\Scripts\TouchCount.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\Scripts\botaoLevel.cs" />
     <Compile Include="Assets\Scripts\TouchPosition.cs" />
+    <Compile Include="Assets\Scripts\LoadingMenuFases.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Scripts\MenuInicialScroll.cs" />
@@ -80,7 +82,6 @@
     <Compile Include="Assets\Scripts\LoadingInfo.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_Translate.cs" />
     <Compile Include="Assets\Scripts\ImpactCode.cs" />
-    <Compile Include="Assets\Scripts\InputAccelerometer.cs" />
     <Compile Include="Assets\Scripts\CameraSegue.cs" />
     <Compile Include="Assets\Scripts\ZoomBe.cs" />
     <Compile Include="Assets\Scripts\CriaPassaroUi.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\Scripts\QuebraParentesco.cs" />
+    <Compile Include="Assets\Scripts\LevelManagerPB1.cs" />
     <Compile Include="Assets\Scripts\PassaroBomba.cs" />
     <Compile Include="Assets\Scripts\MoveTxtInfo.cs" />
     <Compile Include="Assets\Scripts\TouchPhase.cs" />
