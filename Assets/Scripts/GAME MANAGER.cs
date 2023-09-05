@@ -9,8 +9,7 @@ public class GAMEMANAGER : MonoBehaviour
     public GameObject[] passaro;
     public int passarosNum;
     public int passarosEmCena = 0;
-    [SerializeField]
-    private Transform pos;
+    public Transform pos;
     public bool win;
     public bool jogoComecou;
     public string nomePassaro;

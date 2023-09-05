@@ -169,11 +169,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 640
   clicked: 0
   lineFront: {fileID: 0}
   lineBack: {fileID: 0}
   bomb: {fileID: 3642128333984034023, guid: 95977ca0ac57876448dfd2dc8393b000, type: 3}
+  CatapultRB: {fileID: 0}
+  estouPronto: 0
 --- !u!231 &3324174005370083338
 SpringJoint2D:
   m_ObjectHideFlags: 0

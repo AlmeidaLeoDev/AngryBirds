@@ -36,25 +36,32 @@ public class Drag : MonoBehaviour
     //Rastro
     private TrailRenderer rastro;
 
+    public Rigidbody2D CatapultRB;
+    public bool estouPronto = false;
+
+    private void Awake()
+    {
+        /*
+        lineFront = (LineRenderer)GameObject.FindWithTag("LF").GetComponent<LineRenderer>();
+        lineBack = (LineRenderer)GameObject.FindWithTag("LB").GetComponent<LineRenderer>();
+        CatapultRB = GameObject.FindWithTag("LB").GetComponent<Rigidbody2D>();
+        spring.connectedBody = CatapultRB;
+        */
+
+        spring = GetComponent<SpringJoint2D>();
+        spring.connectedBody = CatapultRB;
+        drag = GetComponent<Collider2D>(); //obter o componente Collider2D do GameObject em que o script está anexado
+        leftCatapultRay = new Ray(lineFront.transform.position, Vector3.zero); 
+        passaroCol = GetComponent<CircleCollider2D>(); 
+        passaroRB = GetComponent<Rigidbody2D>();
+        catapult = spring.connectedBody.transform;
+        rayToMT = new Ray(catapult.position, Vector3.zero); 
+        rastro = GetComponentInChildren<TrailRenderer>();
+    }
+
     void Start()
     {
-        drag = GetComponent<Collider2D>(); //obter o componente Collider2D do GameObject em que o script está anexado
-
         SetupLine();
-
-        leftCatapultRay = new Ray(lineFront.transform.position, Vector3.zero); //Para calcular origem e direção
-        passaroCol = GetComponent<CircleCollider2D>(); //Para obter o component de colisão
-        
-        //Pegando componentes para inicializar as variáveis usadas em spring
-        spring = GetComponent<SpringJoint2D>();
-        passaroRB = GetComponent<Rigidbody2D>();
-
-        //Passando valores para minhas variáveis do limite do elástico
-        catapult = spring.connectedBody.transform;
-        rayToMT = new Ray(catapult.position, Vector3.zero); //Origem e direção
-
-        //Rastro
-        rastro = GetComponentInChildren<TrailRenderer>();
     }
 
     // Update is called once per frame
@@ -179,25 +186,30 @@ public class Drag : MonoBehaviour
         yield return new WaitForSeconds(1);
         Instantiate(bomb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
         Destroy(gameObject);
+        GAMEMANAGER.instance.passarosNum -= 1;
+        GAMEMANAGER.instance.passarosEmCena = 0;
+        estouPronto = false;
     }
 
 
     //MOUSE
         void Dragging()
     {
-        Vector3 mouseWP = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mouseWP.z = 0f;
-
-        //Código para limite do elástico
-        catapultToBird = mouseWP - catapult.position;
-
-        if(catapultToBird.sqrMagnitude > 9f)
+        if (passaroRB.isKinematic)
         {
-            rayToMT.direction = catapultToBird;
-            mouseWP = rayToMT.GetPoint(3f);
-        }
+            Vector3 mouseWP = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mouseWP.z = 0f;
 
-        transform.position = mouseWP;
+            //Código para limite do elástico
+            catapultToBird = mouseWP - catapult.position;
+
+            if (catapultToBird.sqrMagnitude > 9f)
+            {
+                rayToMT.direction = catapultToBird;
+                mouseWP = rayToMT.GetPoint(3f);
+            }
+            transform.position = mouseWP;
+        }
     }
 
     
@@ -205,6 +217,7 @@ public class Drag : MonoBehaviour
     {
         clicked = true;
         rastro.enabled = false; //Quando tu clica no mouse o rastro é desativado
+        estouPronto = true;
     }
     void OnMouseUp()
     {
