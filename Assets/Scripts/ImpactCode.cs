@@ -9,7 +9,7 @@ public class ImpactCode : MonoBehaviour
     [SerializeField]
     private Sprite[] sprites;
     [SerializeField]
-    private GameObject bomb;
+    private GameObject bomb, pontos1000 ;
 
     void Start()
     {
@@ -30,12 +30,14 @@ public class ImpactCode : MonoBehaviour
             }
             else if(limite ==  sprites.Length - 1)
             {
+                Instantiate(pontos1000, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
                 Instantiate(bomb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
                 Destroy(gameObject);
             }
         }
         else if (collision.relativeVelocity.magnitude > 12 && collision.gameObject.CompareTag("Player"))
         {
+            Instantiate(pontos1000, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
             Instantiate(bomb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
             Destroy(gameObject) ;
         }
