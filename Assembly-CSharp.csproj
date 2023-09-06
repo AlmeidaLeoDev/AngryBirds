@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Packages\Free 2D Cartoon Parallax Background\Demo\Script\BackgroundControl_0.cs" />
+    <Compile Include="Assets\Scripts\UIMANAGER.cs" />
     <Compile Include="Assets\Scripts\PassaroVeloz.cs" />
     <Compile Include="Assets\Scripts\LineR.cs" />
     <Compile Include="Assets\ZFrame\ZPlayerPrefs.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Assets\Scripts\SaveData\SalvaDados.cs" />
     <Compile Include="Assets\Scripts\Zoom.cs" />
     <Compile Include="Assets\Scripts\PassaroMultiplo.cs" />
+    <Compile Include="Assets\Scripts\AUDIOMANAGER.cs" />
     <Compile Include="Assets\Scripts\PorcoAudio.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightIntensityFade.cs" />
