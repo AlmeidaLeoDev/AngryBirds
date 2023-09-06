@@ -10,6 +10,9 @@ TagManager:
   - nomegame
   - canvasback
   - infotxt
+  - pos
+  - LB
+  - LF
   layers:
   - Default
   - TransparentFX

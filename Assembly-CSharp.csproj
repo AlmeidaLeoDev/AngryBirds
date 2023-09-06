@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\PassaroVeloz.cs" />
     <Compile Include="Assets\Scripts\LineR.cs" />
     <Compile Include="Assets\ZFrame\ZPlayerPrefs.cs" />
+    <Compile Include="Assets\MataPontos.cs" />
     <Compile Include="Assets\ZFrame\Example\Example_ZPlayerPrefs.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\Scripts\TouchCount.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Assets\Scripts\LoadingMenuFases.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoDestructShuriken.cs" />
+    <Compile Include="Assets\Scripts\testeinp.cs" />
     <Compile Include="Assets\Scripts\MenuInicialScroll.cs" />
     <Compile Include="Assets\Scripts\BTN_Confs.cs" />
     <Compile Include="Assets\Scripts\Impulso.cs" />
@@ -98,6 +100,7 @@
     <Compile Include="Assets\Scripts\MoveTxtInfo.cs" />
     <Compile Include="Assets\Scripts\TouchPhase.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_New.cs" />
+    <Compile Include="Assets\Scripts\GAME MANAGER.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
