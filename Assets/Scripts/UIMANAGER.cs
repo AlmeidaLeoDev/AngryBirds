@@ -11,8 +11,7 @@ public class UIMANAGER : MonoBehaviour
     public Animator painelGameOver, painelWin, painelPause;
     [SerializeField]
     private Button winBtnMenu, winBtnNovamente, winBtnProximo;
-    [SerializeField]
-    private Animator estrela1, estrela2, estrela3;
+    public Animator estrela1, estrela2, estrela3;
     [SerializeField]
     private Button loseBtnMenu, loseBtnNovamente;
     [SerializeField]

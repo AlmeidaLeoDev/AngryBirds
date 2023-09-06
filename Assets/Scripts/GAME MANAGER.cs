@@ -15,7 +15,13 @@ public class GAMEMANAGER : MonoBehaviour
     public string nomePassaro;
 
     public bool passaroLancado = false;
-        public Transform objE, objD;
+    public Transform objE, objD;
+
+    public int numPorcosCena;
+    private bool tocaWin = false, tocaLose = false;
+
+    public bool estrela1Fim, estrela2Fim;
+    public int aux;
 
     void Awake()
     {
@@ -48,6 +54,9 @@ public class GAMEMANAGER : MonoBehaviour
         {
             passaro[x] = GameObject.Find("Vulture" + x);
         }
+
+        numPorcosCena = GameObject.FindGameObjectsWithTag("porco").Length;
+        aux = passarosNum;
     }
 
     void NascPassaro()
@@ -77,6 +86,44 @@ public class GAMEMANAGER : MonoBehaviour
     private void WinGame() 
     {
         jogoComecou = false;
+        UIMANAGER.Instance.painelWin.Play("MenuWinAnimado");
+
+        if(!UIMANAGER.Instance.winSom.isPlaying && tocaWin == false)
+        {
+            UIMANAGER.Instance.winSom.Play();
+            tocaWin = true;
+        }
+
+        if(tocaWin && !UIMANAGER.Instance.winSom.isPlaying)
+        {
+            if(passarosNum == aux - 1)
+            {
+                UIMANAGER.Instance.estrela1.Play("Estrela1_animada");
+
+                if (estrela1Fim)
+                {
+                    UIMANAGER.Instance.estrela2.Play("Estrela2_animada");
+
+                    if (estrela2Fim)
+                    {
+                        UIMANAGER.Instance.estrela3.Play("Estrela3_animada");
+                    }
+                }
+            }
+            else if (passarosNum == aux - 2)
+            {
+                UIMANAGER.Instance.estrela1.Play("Estrela1_animada");
+
+                if (estrela1Fim)
+                {
+                    UIMANAGER.Instance.estrela2.Play("Estrela2_animada");
+                }
+            }
+            else if (passarosNum <= aux - 3)
+            {
+                UIMANAGER.Instance.estrela1.Play("Estrela1_animada");
+            }
+        }
     }
 
     private void StartGame() 
@@ -88,6 +135,11 @@ public class GAMEMANAGER : MonoBehaviour
 
     void Update()
     {
+        if(numPorcosCena <= 0)
+        {
+            win = true;
+        }
+
         if (win)
         {
             WinGame();

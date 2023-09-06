@@ -394,6 +394,7 @@
 "Assets/Scripts/CameraSegue.cs"
 "Assets/Scripts/CriaPassaroUi.cs"
 "Assets/Scripts/Drag.cs"
+"Assets/Scripts/Estrelas_Audio.cs"
 "Assets/Scripts/GAME MANAGER.cs"
 "Assets/Scripts/ImpactAnimaPorco.cs"
 "Assets/Scripts/ImpactCode.cs"

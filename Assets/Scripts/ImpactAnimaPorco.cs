@@ -37,6 +37,7 @@ public class ImpactAnimaPorco : MonoBehaviour
             {
                 Instantiate(pontos1000, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
                 Instantiate(bomb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+                GAMEMANAGER.instance.numPorcosCena -= 1;
                 Destroy(gameObject);
             }
         }
@@ -44,6 +45,7 @@ public class ImpactAnimaPorco : MonoBehaviour
         {
             Instantiate(pontos1000, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
             Instantiate(bomb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+            GAMEMANAGER.instance.numPorcosCena -= 1;
             Destroy(gameObject);
         }
     }
