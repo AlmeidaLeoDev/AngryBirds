@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\SaveData\SalvaDados.cs" />
     <Compile Include="Assets\Scripts\Zoom.cs" />
     <Compile Include="Assets\Scripts\PassaroMultiplo.cs" />
+    <Compile Include="Assets\Scripts\PorcoAudio.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\Packages\Free 2D Cartoon Parallax Background\Demo\Script\ParallaxBackground_0.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="Assets\Scripts\CriaPassaroUi.cs" />
     <Compile Include="Assets\Scripts\MorteArea.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Scripts\CFX_AutoRotate.cs" />
+    <Compile Include="Assets\Scripts\MorteGameObject_Passaro.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
     <Compile Include="Assets\Scripts\QuebraParentesco.cs" />
     <Compile Include="Assets\Scripts\LevelManagerPB1.cs" />

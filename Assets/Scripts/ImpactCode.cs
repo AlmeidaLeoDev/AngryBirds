@@ -10,12 +10,17 @@ public class ImpactCode : MonoBehaviour
     private Sprite[] sprites;
     [SerializeField]
     private GameObject bomb, pontos1000 ;
+    private AudioSource audioObj;
+    [SerializeField]
+    private AudioClip[] clips;
 
     void Start()
     {
         limite = 0;
         spriteR = GetComponent<SpriteRenderer>();
         spriteR.sprite = sprites[0];  //Primeira imagem do spriteR
+
+        audioObj = GetComponent<AudioSource>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -27,19 +32,28 @@ public class ImpactCode : MonoBehaviour
             {
                 limite++; //limite é incrementado
                 spriteR.sprite = sprites[limite]; //o sprite atual é trocado pelo próximo do array
+
+                audioObj.clip = clips[0];
+                audioObj.Play();
             }
             else if(limite ==  sprites.Length - 1)
             {
                 Instantiate(pontos1000, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
                 Instantiate(bomb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
-                Destroy(gameObject);
+                Destroy(gameObject, 1);
+
+                audioObj.clip = clips[1];
+                audioObj.Play();
             }
         }
         else if (collision.relativeVelocity.magnitude > 12 && collision.gameObject.CompareTag("Player"))
         {
             Instantiate(pontos1000, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
             Instantiate(bomb, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
-            Destroy(gameObject) ;
+            Destroy(gameObject, 1) ;
+
+            audioObj.clip = clips[1];
+            audioObj.Play();
         }
     }
 }

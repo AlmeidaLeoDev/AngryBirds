@@ -39,6 +39,10 @@ public class Drag : MonoBehaviour
     public Rigidbody2D CatapultRB;
     public bool estouPronto = false;
 
+    //Áudio pássaro
+    public AudioSource audioPassaro;
+    public GameObject audioMortePassaro;
+
     private void Awake()
     {
         /*
@@ -57,6 +61,8 @@ public class Drag : MonoBehaviour
         catapult = spring.connectedBody.transform;
         rayToMT = new Ray(catapult.position, Vector3.zero); 
         rastro = GetComponentInChildren<TrailRenderer>();
+
+        audioPassaro = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -198,11 +204,14 @@ public class Drag : MonoBehaviour
         GAMEMANAGER.instance.passarosEmCena = 0;
         GAMEMANAGER.instance.passaroLancado = false;
         estouPronto = false;
+
+        Instantiate(audioMortePassaro, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+
     }
 
 
     //MOUSE
-        void Dragging()
+    void Dragging()
     {
         if (passaroRB.isKinematic)
         {
@@ -234,5 +243,7 @@ public class Drag : MonoBehaviour
         clicked = false;
         rastro.enabled = true; //Quando tu solta ou botão do mouse o rastro é ativado
         GAMEMANAGER.instance.passaroLancado = true;
+
+        audioPassaro.Play();
     }
 }
