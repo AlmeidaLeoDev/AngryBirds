@@ -67,11 +67,29 @@ public class LevelManagerPB : MonoBehaviour {
 			btnNew.GetComponentInChildren<Text> ().enabled = level.txtAtivo;
 			btnNew.GetComponent<Button> ().onClick.AddListener (() => ClickLevel ("Level" + btnNew.levelTxtBTN.text));
 
-			btnNew.estrela1.enabled = true;
-			btnNew.estrela2.enabled = true;
-			btnNew.estrela3.enabled = true;
-	
-			btnNovo.transform.SetParent (localBtn,false);
+			if (ZPlayerPrefs.GetInt("Level" + btnNew.levelTxtBTN.text + "estrelas") == 1)
+			{
+				btnNew.estrela1.enabled = true;
+			}
+			else if (ZPlayerPrefs.GetInt("Level" + btnNew.levelTxtBTN.text + "estrelas") == 2)
+			{
+                btnNew.estrela1.enabled = true;
+                btnNew.estrela2.enabled = true;
+            }
+			else if (ZPlayerPrefs.GetInt("Level" + btnNew.levelTxtBTN.text + "estrelas") == 3)
+			{
+                btnNew.estrela1.enabled = true;
+                btnNew.estrela2.enabled = true;
+                btnNew.estrela3.enabled = true;
+            }
+            else if (ZPlayerPrefs.GetInt("Level" + btnNew.levelTxtBTN.text + "estrelas") == 0)
+            {
+                btnNew.estrela1.enabled = false;
+                btnNew.estrela2.enabled = false;
+                btnNew.estrela3.enabled = false;
+            }
+
+            btnNovo.transform.SetParent (localBtn,false);
 		}
 	}
     void ClickLevel(string level)

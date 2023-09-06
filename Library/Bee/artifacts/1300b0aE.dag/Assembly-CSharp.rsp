@@ -410,6 +410,7 @@
 "Assets/Scripts/MorteGameObject_Passaro.cs"
 "Assets/Scripts/MorteTudo.cs"
 "Assets/Scripts/MoveTxtInfo.cs"
+"Assets/Scripts/ONDESTOU.cs"
 "Assets/Scripts/PassaroBomba.cs"
 "Assets/Scripts/PassaroMultiplo.cs"
 "Assets/Scripts/PassaroVeloz.cs"

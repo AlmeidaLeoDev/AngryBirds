@@ -23,8 +23,13 @@ public class GAMEMANAGER : MonoBehaviour
     public bool estrela1Fim, estrela2Fim;
     public int aux;
 
+    public int estrelasNum;
+    public bool trava = false;
+
     void Awake()
     {
+        ZPlayerPrefs.Initialize("12345678", "pombobravogame");
+
         if (instance == null) 
         {
             instance = this;
@@ -85,16 +90,19 @@ public class GAMEMANAGER : MonoBehaviour
 
     private void WinGame() 
     {
-        jogoComecou = false;
-        UIMANAGER.Instance.painelWin.Play("MenuWinAnimado");
-
-        if(!UIMANAGER.Instance.winSom.isPlaying && tocaWin == false)
+        if(jogoComecou != false)
         {
-            UIMANAGER.Instance.winSom.Play();
-            tocaWin = true;
+            jogoComecou = false;
+            UIMANAGER.Instance.painelWin.Play("MenuWinAnimado");
+
+            if (!UIMANAGER.Instance.winSom.isPlaying && tocaWin == false)
+            {
+                UIMANAGER.Instance.winSom.Play();
+                tocaWin = true;
+            }
         }
 
-        if(tocaWin && !UIMANAGER.Instance.winSom.isPlaying)
+        if(tocaWin && !UIMANAGER.Instance.winSom.isPlaying && trava == false)
         {
             if(passarosNum == aux - 1)
             {
@@ -107,8 +115,10 @@ public class GAMEMANAGER : MonoBehaviour
                     if (estrela2Fim)
                     {
                         UIMANAGER.Instance.estrela3.Play("Estrela3_animada");
+                        trava = true;
                     }
                 }
+                estrelasNum = 3;
             }
             else if (passarosNum == aux - 2)
             {
@@ -117,11 +127,32 @@ public class GAMEMANAGER : MonoBehaviour
                 if (estrela1Fim)
                 {
                     UIMANAGER.Instance.estrela2.Play("Estrela2_animada");
+                    trava = true;
                 }
+                estrelasNum = 2;
             }
             else if (passarosNum <= aux - 3)
             {
                 UIMANAGER.Instance.estrela1.Play("Estrela1_animada");
+                estrelasNum = 1;
+                trava = true;
+            }
+            else
+            {
+                estrelasNum = 0;
+                trava = true;
+            }
+
+            if (!ZPlayerPrefs.HasKey("Level" + ONDESTOU.instance.fase + "estrelas"))
+            {
+                ZPlayerPrefs.SetInt("Level" + ONDESTOU.instance.fase + "estrelas", estrelasNum);
+            }
+            else
+            {
+                if(ZPlayerPrefs.GetInt("Level" + ONDESTOU.instance.fase + "estrelas") < estrelasNum)
+                {
+                    ZPlayerPrefs.SetInt("Level" + ONDESTOU.instance.fase + "estrelas", estrelasNum);
+                }
             }
         }
     }
@@ -131,6 +162,11 @@ public class GAMEMANAGER : MonoBehaviour
         jogoComecou = true;
         passarosEmCena = 0;
         win = false;
+    }
+
+    private void Start()
+    {
+        ZPlayerPrefs.DeleteAll();
     }
 
     void Update()
