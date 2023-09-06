@@ -3030,6 +3030,9 @@ MonoBehaviour:
   win: 0
   jogoComecou: 0
   nomePassaro: 
+  passaroLancado: 0
+  objE: {fileID: 0}
+  objD: {fileID: 0}
 --- !u!4 &802387028
 Transform:
   m_ObjectHideFlags: 0
@@ -3056,7 +3059,7 @@ GameObject:
   - component: {fileID: 819121315}
   m_Layer: 0
   m_Name: D
-  m_TagString: Untagged
+  m_TagString: PD
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3070,7 +3073,7 @@ Transform:
   m_GameObject: {fileID: 819121314}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 209.78, y: 11.49, z: -13.3}
+  m_LocalPosition: {x: 28, y: 11.49, z: -13.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4592,9 +4595,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35c23324c7a42e04490bcb5e8d3ccdcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objE: {fileID: 1516540404}
-  objD: {fileID: 819121315}
-  passaro: {fileID: 696559169}
 --- !u!114 &965040201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7733,7 +7733,7 @@ GameObject:
   - component: {fileID: 1516540404}
   m_Layer: 0
   m_Name: E
-  m_TagString: Untagged
+  m_TagString: PE
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7747,7 +7747,7 @@ Transform:
   m_GameObject: {fileID: 1516540403}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -58.84, y: 11.39, z: -8.8640995}
+  m_LocalPosition: {x: -14.6, y: 11.39, z: -8.8640995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

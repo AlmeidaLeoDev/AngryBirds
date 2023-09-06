@@ -134,6 +134,14 @@ public class Drag : MonoBehaviour
         {
             MataPassaro();
         }
+
+        if (passaroRB.isKinematic == false)
+        {
+            Vector3 posCam = Camera.main.transform.position;
+            posCam.x = transform.position.x;
+            posCam.x = Mathf.Clamp(posCam.x, GAMEMANAGER.instance.objE.position.x, GAMEMANAGER.instance.objD.position.x);
+            Camera.main.transform.position = posCam;
+        }
     }
 
 
@@ -188,6 +196,7 @@ public class Drag : MonoBehaviour
         Destroy(gameObject);
         GAMEMANAGER.instance.passarosNum -= 1;
         GAMEMANAGER.instance.passarosEmCena = 0;
+        GAMEMANAGER.instance.passaroLancado = false;
         estouPronto = false;
     }
 
@@ -224,5 +233,6 @@ public class Drag : MonoBehaviour
         passaroRB.isKinematic = false;
         clicked = false;
         rastro.enabled = true; //Quando tu solta ou botão do mouse o rastro é ativado
+        GAMEMANAGER.instance.passaroLancado = true;
     }
 }

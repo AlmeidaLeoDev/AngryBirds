@@ -14,6 +14,9 @@ public class GAMEMANAGER : MonoBehaviour
     public bool jogoComecou;
     public string nomePassaro;
 
+    public bool passaroLancado = false;
+        public Transform objE, objD;
+
     void Awake()
     {
         if (instance == null) 
@@ -32,6 +35,10 @@ public class GAMEMANAGER : MonoBehaviour
     void Carrega(Scene cena, LoadSceneMode modo)
     {
         pos = GameObject.FindWithTag("pos").GetComponent<Transform>();
+        objE = GameObject.FindWithTag("PE").GetComponent<Transform>();
+        objD = GameObject.FindWithTag("PD").GetComponent<Transform>();
+
+        StartGame ();
 
         // Passaro Pos
         passarosNum = GameObject.FindGameObjectsWithTag("Player").Length;
@@ -72,7 +79,7 @@ public class GAMEMANAGER : MonoBehaviour
         jogoComecou = false;
     }
 
-    private void Start()
+    private void StartGame() 
     {
         jogoComecou = true;
         passarosEmCena = 0;
