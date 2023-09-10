@@ -18,6 +18,13 @@ public class UIMANAGER : MonoBehaviour
     private Button pauseBtn, pauseBtnPlay, pauseBtnNovamente, pauseBtnMenu, pauseBtnLoja;
     public AudioSource winSom;
 
+    public AudioSource loseSom;
+    public Text pontosTxt, bestPontoTxt;
+
+    public Text moedasTxt;
+
+    private Image fundoPreto;
+
     private void Awake()
     {
         if(Instance == null)
@@ -58,6 +65,62 @@ public class UIMANAGER : MonoBehaviour
         pauseBtnLoja = GameObject.Find("shop").GetComponent<Button>();
         //audio
         winSom = painelWin.GetComponent<AudioSource>();
+
+        loseSom = painelGameOver.GetComponent<AudioSource>();
+        //Pontos
+        pontosTxt = GameObject.FindWithTag("pointVal").GetComponent<Text>();
+        bestPontoTxt = GameObject.FindWithTag("ptBest").GetComponent<Text>();
+
+        //Text Score
+        moedasTxt = GameObject.FindWithTag("moedaTxt").GetComponent<Text>();
+
+        //Imagem fudno preto
+        fundoPreto = GameObject.FindWithTag("fundoPreto").GetComponent<Image>();
+
+        //Eventos
+        //pause
+        pauseBtn.onClick.AddListener(Pausar);
+        pauseBtnPlay.onClick.AddListener(PausarInvers);
+        pauseBtnNovamente.onClick.AddListener(Again);
+        pauseBtnMenu.onClick.AddListener(GoMenu);
+    }
+
+    void Pausar()
+    {
+        GAMEMANAGER.instance.pausado = true;
+        Time.timeScale = 0;
+        fundoPreto.enabled = true;
+        painelPause.Play("MenuPauseAnim");
+    }
+
+    void PausarInvers()
+    {
+        GAMEMANAGER.instance.pausado = false;
+        Time.timeScale = 1;
+        fundoPreto.enabled = false;
+        painelPause.Play("MenuPauseAnimInvers");
+    }
+
+    //Método Pause Joga Novamente
+    void Again()
+    {
+        SceneManager.LoadScene(ONDESTOU.instance.fase);
+        Time.timeScale = 1;
+        GAMEMANAGER.instance.pausado = false;
+    }
+    //Método pause Menu
+    void GoMenu()
+    {
+        SceneManager.LoadScene("MenuFase2");
+        Time.timeScale = 1;
+        GAMEMANAGER.instance.pausado = false;
+    }
+
+    void GoLoja() 
+    {
+        //SceneManager.LoadScene("MenuFase2");
+        Time.timeScale = 1;
+        GAMEMANAGER.instance.pausado = false;
     }
 
     // Start is called before the first frame update

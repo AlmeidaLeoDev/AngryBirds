@@ -67,6 +67,7 @@
     <Compile Include="Assets\ZFrame\Example\Example_ZPlayerPrefs.cs" />
     <Compile Include="Assets\Scripts\Estrelas_Audio.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\Scripts\SCOREMANAGER.cs" />
     <Compile Include="Assets\Scripts\TouchCount.cs" />
     <Compile Include="Assets\Packages\JMO Assets\Cartoon FX (legacy)\Demo\Assets\CFX_Demo_RotateCamera.cs" />
     <Compile Include="Assets\Scripts\botaoLevel.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Assets\Scripts\MorteTudo.cs" />
     <Compile Include="Assets\Scripts\SaveData\SalvaDados.cs" />
     <Compile Include="Assets\Scripts\Zoom.cs" />
+    <Compile Include="Assets\Scripts\PointManager.cs" />
     <Compile Include="Assets\Scripts\PassaroMultiplo.cs" />
     <Compile Include="Assets\Scripts\AUDIOMANAGER.cs" />
     <Compile Include="Assets\Scripts\PorcoAudio.cs" />

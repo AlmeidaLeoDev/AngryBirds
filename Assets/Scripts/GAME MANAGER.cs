@@ -19,12 +19,18 @@ public class GAMEMANAGER : MonoBehaviour
 
     public int numPorcosCena;
     private bool tocaWin = false, tocaLose = false;
+    public bool lose;
 
     public bool estrela1Fim, estrela2Fim;
     public int aux;
 
     public int estrelasNum;
     public bool trava = false;
+
+    public int pontosGame, bestPontoGame;
+    public int moedasGame;
+
+    public bool pausado = false;
 
     void Awake()
     {
@@ -86,10 +92,19 @@ public class GAMEMANAGER : MonoBehaviour
     void GameOver()
     {
         jogoComecou = false;
+
+        UIMANAGER.Instance.painelGameOver.Play("MenuLoseAnimado");
+        if (!UIMANAGER.Instance.loseSom.isPlaying && tocaLose == false)
+        {
+            UIMANAGER.Instance.loseSom.Play();
+            tocaLose = true;
+        }
     }
 
     private void WinGame() 
     {
+        SCOREMANAGER.instance.SalvarDados(moedasGame);
+
         if(jogoComecou != false)
         {
             jogoComecou = false;
@@ -100,6 +115,9 @@ public class GAMEMANAGER : MonoBehaviour
                 UIMANAGER.Instance.winSom.Play();
                 tocaWin = true;
             }
+
+            //Pontos
+            POINTMANAGER.instance.MelhorPontuacaoSave(ONDESTOU.instance.faseN, pontosGame);
         }
 
         if(tocaWin && !UIMANAGER.Instance.winSom.isPlaying && trava == false)
@@ -162,10 +180,22 @@ public class GAMEMANAGER : MonoBehaviour
         jogoComecou = true;
         passarosEmCena = 0;
         win = false;
+        lose = false;
+        trava = false;
+
+        pontosGame = 0;
+        bestPontoGame = POINTMANAGER.instance.MelhorPontuacaoLoad(ONDESTOU.instance.faseN);
+
+        UIMANAGER.Instance.pontosTxt.text = pontosGame.ToString();
+        UIMANAGER.Instance.bestPontoTxt.text = bestPontoGame.ToString();
+        
+        moedasGame = SCOREMANAGER.instance.LoadDados();
+        UIMANAGER.Instance.moedasTxt.text = SCOREMANAGER.instance.LoadDados().ToString();   
     }
 
     private void Start()
     {
+        StartGame();
         ZPlayerPrefs.DeleteAll();
     }
 
@@ -175,12 +205,21 @@ public class GAMEMANAGER : MonoBehaviour
         {
             win = true;
         }
+        else if(numPorcosCena > 0 && passarosNum <= 0)
+        {
+            lose = true;
+        }
 
         if (win)
         {
             WinGame();
         }
-        else
+        else if(lose)
+        {
+            GameOver();
+        }
+
+        if (jogoComecou)
         {
             NascPassaro();
         }

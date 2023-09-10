@@ -44,6 +44,8 @@ public class ImpactCode : MonoBehaviour
 
                 audioObj.clip = clips[1];
                 audioObj.Play();
+                GAMEMANAGER.instance.pontosGame += 1000;
+                UIMANAGER.Instance.pontosTxt.text = GAMEMANAGER.instance.pontosGame.ToString();
             }
         }
         else if (collision.relativeVelocity.magnitude > 12 && collision.gameObject.CompareTag("Player"))
@@ -54,6 +56,9 @@ public class ImpactCode : MonoBehaviour
 
             audioObj.clip = clips[1];
             audioObj.Play();
+
+            GAMEMANAGER.instance.pontosGame += 1000;
+            UIMANAGER.Instance.pontosTxt.text = GAMEMANAGER.instance.pontosGame.ToString();
         }
     }
 }

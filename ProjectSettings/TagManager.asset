@@ -15,6 +15,11 @@ TagManager:
   - LF
   - PE
   - PD
+  - porco
+  - pointVal
+  - ptBest
+  - moedaTxt
+  - fundoPreto
   layers:
   - Default
   - TransparentFX

@@ -14,28 +14,32 @@ public class Zoom : MonoBehaviour
 
     void Update()
     {
-        //MOUSE
-        if(Input.GetMouseButtonUp(0))
+        if (GAMEMANAGER.instance.jogoComecou && GAMEMANAGER.instance.pausado == false)
         {
-            if(um_click == false)
+            //MOUSE
+            if (Input.GetMouseButtonUp(0))
             {
-                um_click = true;
-                tempoParaDuploCLick = Time.time; //Controle de tempo para clicar novamente e o zoom funcionar perfeitamente
+                if (um_click == false)
+                {
+                    um_click = true;
+                    tempoParaDuploCLick = Time.time; //Controle de tempo para clicar novamente e o zoom funcionar perfeitamente
+                }
+                else
+                {
+                    um_click = false;
+                    liberaZoom = true;
+                }
             }
-            else
+
+            if (um_click == true)
             {
-                um_click = false;
-                liberaZoom = true;
+                if ((Time.time - tempoParaDuploCLick) > delay)
+                {
+                    um_click = false;
+                }
             }
         }
 
-        if(um_click == true)
-        {
-            if((Time.time - tempoParaDuploCLick) > delay)
-            {
-                um_click = false;
-            }
-        }
 
         if(Camera.main.orthographicSize > 5 && trava == 1) 
         {

@@ -233,9 +233,12 @@ public class Drag : MonoBehaviour
     
     void OnMouseDown()
     {
-        clicked = true;
-        rastro.enabled = false; //Quando tu clica no mouse o rastro é desativado
-        estouPronto = true;
+        if (GAMEMANAGER.instance.pausado == false)
+        {
+            clicked = true;
+            rastro.enabled = false; //Quando tu clica no mouse o rastro é desativado
+            estouPronto = true;
+        }
     }
     void OnMouseUp()
     {
@@ -245,5 +248,16 @@ public class Drag : MonoBehaviour
         GAMEMANAGER.instance.passaroLancado = true;
 
         audioPassaro.Play();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("moedasTag"))
+        {
+            GAMEMANAGER.instance.moedasGame += 50;
+            
+            UIMANAGER.Instance.moedasTxt.text = GAMEMANAGER.instance.moedasGame.ToString(); 
+            Destroy(collision.gameObject );
+        }
     }
 }
